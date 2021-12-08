@@ -1,5 +1,6 @@
 body{
   font-family: "Helvetica", arial, sans-serif; font-size: 16px;
+  opacity: 50%;
 }
 
 .book {
@@ -18,7 +19,7 @@ body{
   margin-right: 0.3em;
 }
 
-.publisher{
+.title{
   color: #8899a6;
   font-size: 13px;
   margin-left: 20px;
