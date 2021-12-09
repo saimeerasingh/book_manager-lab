@@ -23,10 +23,10 @@ def new_book():
 @books_blueprint.route("/books",  methods=['POST'])
 def create_book():
     title    = request.form['title']
-    genre = request.form['genre']
-    publisher   = request.form['publisher']
+    genre = request.form['section']
+    price   = request.form['price']
     author  = author_repository.select(request.form['author_id'])
-    book = Book(title, genre, publisher, author)
+    book = Book(title, genre, price, author)
     book_repository.save(book)
     return redirect('/books')
 
